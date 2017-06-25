@@ -14,7 +14,7 @@ import com.fpcs.invt.mgmt.sys.constants.CommonConstants;
 import com.fpcs.invt.mgmt.sys.constants.JsonConstants;
 import com.fpcs.invt.mgmt.sys.constants.datapopulator.MenuItemAccessDataPopulator;
 import com.fpcs.invt.mgmt.sys.dao.MenuItemAccessDAO;
-import com.fpcs.invt.mgmt.sys.domain.MenuItemAccess;
+import com.fpcs.invt.mgmt.sys.domain.user_data.MenuItemAccess;
 import com.fpcs.invt.mgmt.sys.enums.ERROR_CODE;
 import com.fpcs.invt.mgmt.sys.enums.ROLES;
 import com.fpcs.invt.mgmt.sys.parser.CustomJSONParser;

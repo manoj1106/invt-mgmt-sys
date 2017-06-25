@@ -14,6 +14,9 @@ var ajaxParameter = {
 };
 
 var URL = {
+	/***url mapping for utilities***/
+	GET_STATES_BY_COUNTRY : 'invtmgmtsys/getStatesByCountry',
+	GET_CITIES_BY_STATES : 'invtmgmtsys/getCitiesByStates',
 	/*** url mapping for menu item access ***/
 	MENU_ITEM_ACCESS : 'menuitemaccess/menuitemaccess',
 	SAVE_MENU_ITEM_ACCESS : 'menuitemaccess/saveMenuItemAccess',

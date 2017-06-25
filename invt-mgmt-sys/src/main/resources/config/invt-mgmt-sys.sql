@@ -283,6 +283,7 @@ CREATE TABLE user_data.roles
 (
   role_id bigserial NOT NULL,
   role character varying(20),
+  deleted_on date,
   CONSTRAINT roles_role_id_pkey PRIMARY KEY (role_id)
 )
 WITH (
@@ -314,6 +315,7 @@ CREATE TABLE user_data.user_login
   role_id bigint,
   is_active boolean,
   pincode bigint,
+  deleted_on date,
   CONSTRAINT user_name_pkey PRIMARY KEY (user_name),
   CONSTRAINT shop_id_fkey FOREIGN KEY (shop_id)
       REFERENCES shop_data.shop_details (shop_id) MATCH SIMPLE

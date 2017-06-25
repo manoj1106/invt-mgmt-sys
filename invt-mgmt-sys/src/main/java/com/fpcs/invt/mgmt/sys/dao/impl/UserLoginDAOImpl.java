@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import com.fpcs.invt.mgmt.sys.dao.UserLoginDAO;
-import com.fpcs.invt.mgmt.sys.domain.UserLogin;
+import com.fpcs.invt.mgmt.sys.domain.user_data.UserLogin;
 
 @Repository
 public class UserLoginDAOImpl implements UserLoginDAO {

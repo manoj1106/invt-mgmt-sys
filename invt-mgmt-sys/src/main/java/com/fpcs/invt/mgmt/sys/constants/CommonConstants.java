@@ -19,6 +19,9 @@ public class CommonConstants {
 	public static final String LOGIN_DETAILS  = "LoginDetails";
 	public static final String USER_DETAILS  = "UserDetails";
 	public static final String PERCENT = "%";
+	
+	public static final String STATES = "states";
+	public static final String CITIES = "cities";
 
 	private CommonConstants() {
 		

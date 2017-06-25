@@ -30,26 +30,30 @@
 			<menu name="User Registration">
 				<li name="" classes="" id=""></li>
 				<a name="" classes="aj" id="" href="#." data-href="registration/userregistration" data-ref=""></a>
-				<i name="" classes="fa fa-university" id=""></i>
+				<i name="" classes="fa fa-user" id=""></i>
 				<span name="User Registration" classes="" id=""></span>
 			</menu>
-			<menu name="Staff Registration">
+		</submenu>
+	</menu>
+	<menu name="List">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-th-list" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="List" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="List Shops">
 				<li name="" classes="" id=""></li>
-				<a name="" classes="aj" id="" href="#." data-href="staffregistration/staffregistration" data-ref=""></a>
+				<a name="" classes="aj" id="" href="#." data-href="list/listshops" data-ref=""></a>
 				<i name="" classes="fa fa-university" id=""></i>
-				<span name="Staff Registration" classes="" id=""></span>
+				<span name="List Shops" classes="" id=""></span>
 			</menu>
-			<menu name="Student Registration">
+			<menu name="List Users">
 				<li name="" classes="" id=""></li>
-				<a name="" classes="aj" id="" href="#." data-href="schoolregistration/schoolregistration" data-ref=""></a>
-				<i name="" classes="fa fa-university" id=""></i>
-				<span name="Student Registration" classes="" id=""></span>
-			</menu>
-			<menu name="Parent Registration">
-				<li name="" classes="" id=""></li>
-				<a name="" classes="aj" id="" href="#." data-href="schoolregistration/schoolregistration" data-ref=""></a>
-				<i name="" classes="fa fa-university" id=""></i>
-				<span name="Parent Registration" classes="" id=""></span>
+				<a name="" classes="aj" id="" href="#." data-href="list/listusers" data-ref=""></a>
+				<i name="" classes="fa fa-user" id=""></i>
+				<span name="List Users" classes="" id=""></span>
 			</menu>
 		</submenu>
 	</menu>

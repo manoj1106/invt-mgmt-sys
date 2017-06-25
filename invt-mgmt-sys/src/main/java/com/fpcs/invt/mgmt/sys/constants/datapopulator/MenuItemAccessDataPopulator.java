@@ -3,7 +3,7 @@
  */
 package com.fpcs.invt.mgmt.sys.constants.datapopulator;
 
-import com.fpcs.invt.mgmt.sys.domain.MenuItemAccess;
+import com.fpcs.invt.mgmt.sys.domain.user_data.MenuItemAccess;
 import com.fpcs.invt.mgmt.sys.vo.MenuItemAccessVO;
 
 /**

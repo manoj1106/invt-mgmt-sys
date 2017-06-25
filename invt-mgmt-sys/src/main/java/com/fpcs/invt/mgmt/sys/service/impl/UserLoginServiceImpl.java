@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.fpcs.invt.mgmt.sys.constants.CommonConstants;
 import com.fpcs.invt.mgmt.sys.dao.UserLoginDAO;
-import com.fpcs.invt.mgmt.sys.domain.UserLogin;
+import com.fpcs.invt.mgmt.sys.domain.user_data.UserLogin;
 import com.fpcs.invt.mgmt.sys.parser.MenuBuilder;
 import com.fpcs.invt.mgmt.sys.security.SessionUtil;
 import com.fpcs.invt.mgmt.sys.security.UserContext;

@@ -259,5 +259,5 @@
 		</div>
 	</section>
 </body>
-<script src="scripts/registration.js"></script>
+<script src="scripts/shopregistration.js"></script>
 </html>

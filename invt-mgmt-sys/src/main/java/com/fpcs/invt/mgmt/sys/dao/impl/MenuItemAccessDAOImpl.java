@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import com.fpcs.invt.mgmt.sys.dao.MenuItemAccessDAO;
-import com.fpcs.invt.mgmt.sys.domain.MenuItemAccess;
+import com.fpcs.invt.mgmt.sys.domain.user_data.MenuItemAccess;
 import com.fpcs.invt.mgmt.sys.enums.ERROR_CODE;
 import com.fpcs.invt.mgmt.sys.utils.InvtMgmtUtil;
 import com.fpcs.invt.mgmt.sys.utils.exception.InvtMgmtSysException;;

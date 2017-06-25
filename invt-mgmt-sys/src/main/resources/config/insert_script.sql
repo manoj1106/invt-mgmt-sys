@@ -1,0 +1,27 @@
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Madhya Pradesh', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Uttar Pradesh', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Andhra Pradesh', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Arunachal Pradesh', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Maharashtra', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Asam', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('West Bangal', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Bihar', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Chattisgarh', 'India', null);
+INSERT INTO static_data.state(state, country, deleted_on) VALUES ('Rajasthan', 'India', null);
+
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Indore', 'Madhya Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Bhopal', 'Madhya Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Jabalpur', 'Madhya Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Ujjain', 'Madhya Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Dewas', 'Madhya Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Mumbai', 'Maharashtra', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Pune', 'Maharashtra', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Nagpur', 'Maharashtra', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Nasik', 'Maharashtra', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Solapur', 'Maharashtra', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Patna', 'Bihar', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Luckhnow', 'Uttar Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Agra', 'Uttar Pradesh', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Kolkata', 'West Bangal', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Jaipur', 'Rajasthan', 'India', null);
+INSERT INTO static_data.city(city, state, country, deleted_on) VALUES ('Kota', 'Rajasthan', 'India', null);

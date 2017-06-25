@@ -71,7 +71,7 @@
 	      </props>
 	    </property>
 	    <!-- Set base package of your entities -->
-	    <property name="packagesToScan" value="com.fpcs.invt.mgmt.sys.domain"/>
+	    <property name="packagesToScan" value="com.fpcs.invt.mgmt.sys.domain.*"/>
 	    <!-- Set share cache mode -->
 	    <property name="sharedCacheMode" value="ENABLE_SELECTIVE"/>
 	    <!-- Set validation mode -->

@@ -4,6 +4,7 @@ public class JspConstants {
 
 	public static final String LOGIN = "login";
 	public static final String INDEX = "index";
+	public static final String ERROR_PAGE = "403";
 	public static final String REDIRECT_INDEX = "redirect:index";
 	public static final String MESSAGES = "messages";
 	public static final String STUDENT_REGISTRATION = "studregistration";

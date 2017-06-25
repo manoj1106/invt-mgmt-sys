@@ -19,45 +19,54 @@ import com.fpcs.invt.mgmt.sys.constants.JspConstants;
 import com.fpcs.invt.mgmt.sys.security.SessionUtil;
 import com.fpcs.invt.mgmt.sys.service.UserLoginService;
 
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.MENUES;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.USER_ROLE;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.BASE_URL;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.INDEX;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.LOGIN;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.LOGOUT;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.ERROR;
+import static com.fpcs.invt.mgmt.sys.constants.ControllerConstants.ERROR_PAGE;;
+
 @Controller
 public class UserLoginController {
 
 	@Autowired
 	private UserLoginService userLoginService; 
 	
-	@RequestMapping(value="/" , method=RequestMethod.GET)
+	@RequestMapping(value = BASE_URL, method=RequestMethod.GET)
 	public String login() {
 		return JspConstants.LOGIN;
 	}
 	
-	@RequestMapping(value ="/index", method = RequestMethod.GET)
+	@RequestMapping(value = INDEX, method = RequestMethod.GET)
 	public String defaultPage(HttpServletRequest request , Map<String,String> map) {
 		userLoginService.setUserDetails(request);
-		map.put("userrole", SessionUtil.getUserContext(request).getUserDetail().getRole());
-		map.put("menues", userLoginService.getAllowedMenues(request));
+		map.put(USER_ROLE, SessionUtil.getUserContext(request).getUserDetail().getRole());
+		map.put(MENUES, userLoginService.getAllowedMenues(request));
 	  return JspConstants.INDEX;
 	}
 
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public ModelAndView login(@RequestParam(value = "error", required = false) String error,
-		@RequestParam(value = "logout", required = false) String logout) {
+	@RequestMapping(value = LOGIN, method = RequestMethod.GET)
+	public ModelAndView login(@RequestParam(value = ERROR, required = false) String error,
+		@RequestParam(value = LOGOUT, required = false) String logout) {
 
 	  ModelAndView model = new ModelAndView();
 	  if (error != null) {
-		model.addObject("error", "Invalid username and password!");
+		model.addObject(ERROR, "Invalid username and password!");
 	  }
 
 	  if (logout != null) {
 		model.addObject("msg", "You've been logged out successfully.");
 	  }
-	  model.setViewName("login");
+	  model.setViewName(JspConstants.LOGIN);
 
 	  return model;
 
 	}
 
 	//for 403 access denied page
-	@RequestMapping(value = "/403", method = RequestMethod.GET)
+	@RequestMapping(value = ERROR_PAGE, method = RequestMethod.GET)
 	public ModelAndView accesssDenied() {
 
 	  ModelAndView model = new ModelAndView();
@@ -69,7 +78,7 @@ public class UserLoginController {
 		model.addObject("username", userDetail.getUsername());
 	  }
 
-	  model.setViewName("403");
+	  model.setViewName(JspConstants.ERROR_PAGE);
 	  return model;
 
 	}
