@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.min-height {
+	height: 100% !important;
+	min-height: 100% !important;
+}
+
+.padding-top-1per {
+	padding-top: 1% !important;
+}

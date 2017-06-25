@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+          
+  <mapping> 
+    <class-a>com.fpcs.invt.mgmt.sys.domain.UserLogin</class-a>
+    <class-b>com.fpcs.invt.mgmt.sys.security.UserContext.UserDetail</class-b>  
+    <field>
+      <a>userName</a>
+      <b>userName</b>
+    </field>
+    <field>
+      <a>roles.role</a>
+      <b>role</b>
+      <a-deep-index-hint>com.fpcs.invt.mgmt.sys.domain.UserLogin, com.fpcs.invt.mgmt.sys.domain.Roles</a-deep-index-hint>
+    </field>
+    <field>
+      <a>shopDetails.shopId</a>
+      <b>shopId</b>
+      <a-deep-index-hint>com.fpcs.invt.mgmt.sys.domain.UserLogin, com.fpcs.invt.mgmt.sys.domain.ShopDetails</a-deep-index-hint>
+    </field>
+    <field>
+      <a>firstName</a>
+      <b>firstName</b>
+    </field>
+    <field>
+      <a>middleName</a>
+      <b>middleName</b>
+    </field>
+    <field>
+      <a>lastName</a>
+      <b>lastName</b>
+    </field>
+    <field>
+      <a>addressLine1</a>
+      <b>addressLine1</b>
+    </field>
+    <field>
+      <a>addressLine2</a>
+      <b>addressLine2</b>
+    </field>
+    <field>
+      <a>town</a>
+      <b>town</b>
+    </field>
+    <field>
+      <a>city</a>
+      <b>city</b>
+    </field>
+    <field>
+      <a>state</a>
+      <b>state</b>
+    </field>
+    <field>
+      <a>country</a>
+      <b>country</b>
+    </field>
+  </mapping>  
+
+</mappings>

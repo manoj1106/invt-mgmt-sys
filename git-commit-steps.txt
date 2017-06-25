@@ -1,0 +1,23 @@
+steps to create a local git repo and commit to parent git
+
+1. Goto the present working directory i.e. your workspace.
+type
+ git init
+this command will create a local repository there.
+
+2. Check the status in the directory what all files you can add into your git repository.
+type
+ git status 
+this command will show all the files you can add to your git repository.
+
+3. Add the files to your git repository
+ git add <File-name-to be add to git repo>
+
+4. Commit files to your local repository
+	git commit -m <file-name-to-commit> "comment"
+
+5. create a remote origin
+	git remote add origin <https://github.com/user/repository.git>
+
+6 push the code to remote repository
+  git push -u origin master

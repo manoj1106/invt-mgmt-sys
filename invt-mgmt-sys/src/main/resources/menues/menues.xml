@@ -1,0 +1,356 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<menues>
+	<ul classes="sidebar-menu"></ul>
+	<menu name="Dashboard">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="dashboard" data-ref=""></a>
+		<i name="" classes="fa fa-dashboard" id=""></i>
+		<span name="Dashboard" classes="" id=""></span>
+	</menu>
+	<menu name="Menu Item Access">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="menuitemaccess/menuitemaccess" data-ref=""></a>
+		<i name="" classes="fa fa-cog fa-fw" id=""></i>
+		<span name="Menu Item Access" classes="" id=""></span>
+	</menu>
+	<menu name="Registrations">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-th-list" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Registrations" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Shop Registration">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="registration/shopregistration" data-ref=""></a>
+				<i name="" classes="fa fa-university" id=""></i>
+				<span name="Shop Registration" classes="" id=""></span>
+			</menu>
+			<menu name="User Registration">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="registration/userregistration" data-ref=""></a>
+				<i name="" classes="fa fa-university" id=""></i>
+				<span name="User Registration" classes="" id=""></span>
+			</menu>
+			<menu name="Staff Registration">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="staffregistration/staffregistration" data-ref=""></a>
+				<i name="" classes="fa fa-university" id=""></i>
+				<span name="Staff Registration" classes="" id=""></span>
+			</menu>
+			<menu name="Student Registration">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="schoolregistration/schoolregistration" data-ref=""></a>
+				<i name="" classes="fa fa-university" id=""></i>
+				<span name="Student Registration" classes="" id=""></span>
+			</menu>
+			<menu name="Parent Registration">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="schoolregistration/schoolregistration" data-ref=""></a>
+				<i name="" classes="fa fa-university" id=""></i>
+				<span name="Parent Registration" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+	<menu name="Static pages">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-file-text" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Static pages" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Control Pages">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-cog" id=""></i>
+				<span name="Control Pages" classes="" id=""></span>
+			</menu>
+			<menu name="School modules">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-file-text" id=""></i>
+				<span name="School modules" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+	<menu name="Messages">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="messages" data-ref=""></a>
+		<i name="" classes="fa fa-envelope" id=""></i>
+		<span name="Messages" classes="" id=""></span>
+	</menu>
+	<menu name="Calender">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-calendar" id=""></i>
+		<span name="Calender" classes="" id=""></span>
+	</menu>
+	<menu name="Classes Schedule">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-list" id=""></i>
+		<span name="Classes Schedule" classes="" id=""></span>
+	</menu>
+	<menu name="Attendance">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-bar-chart" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Attendance" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Attendance">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-check" id=""></i>
+				<span name="Attendance" classes="" id=""></span>
+			</menu>
+			<menu name="Attendance Statistics">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-bar-chart" id=""></i>
+				<span name="Attendance Statistics" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+	<menu name="Staff Attendance">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-check" id=""></i>
+		<span name="Staff Attendance" classes="" id=""></span>
+	</menu>
+	<menu name="Hostel Management">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-bar-chart" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Hostel Management" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Hostel">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-check" id=""></i>
+				<span name="Hostel" classes="" id=""></span>
+			</menu>
+			<menu name="Hostel Categories">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-bar-chart" id=""></i>
+				<span name="Hostel Categories" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+	<menu name="Library">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-folder-open" id=""></i>
+		<span name="Library" classes="" id=""></span>
+	</menu>
+	<menu name="Media Center">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-video-camera" id=""></i>
+		<span name="Media Center" classes="" id=""></span>
+	</menu>
+	<menu name="Teachers">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-suitcase" id=""></i>
+		<span name="Teachers" classes="" id=""></span>
+	</menu>
+	<menu name="Students">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-users" id=""></i>
+		<span name="Students" classes="" id=""></span>
+	</menu>
+	<menu name="Parents">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-user" id=""></i>
+		<span name="Parents" classes="" id=""></span>
+	</menu>
+	<menu name="Grade levels">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-check-square-o" id=""></i>
+		<span name="Grade levels" classes="" id=""></span>
+	</menu>
+	<menu name="Study Material">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-book" id=""></i>
+		<span name="Study Material" classes="" id=""></span>
+	</menu>
+	<menu name="Assignments">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-file-pdf-o" id=""></i>
+		<span name="Assignments" classes="" id=""></span>
+	</menu>
+	<menu name="Exams List">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-graduation-cap" id=""></i>
+		<span name="Exams List" classes="" id=""></span>
+	</menu>
+	<menu name="Online Exams">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-graduation-cap" id=""></i>
+		<span name="Online Exams" classes="" id=""></span>
+	</menu>
+	<menu name="News Board">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-bullhorn" id=""></i>
+		<span name="News Board" classes="" id=""></span>
+	</menu>
+	<menu name="Events">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-clock-o" id=""></i>
+		<span name="Events" classes="" id=""></span>
+	</menu>
+	<menu name="Accounting">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-bar-chart" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Accounting" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Fee Types">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-money" id=""></i>
+				<span name="Fee Types" classes="" id=""></span>
+			</menu>
+			<menu name="Fee Allocation">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-money" id=""></i>
+				<span name="Fee Allocation" classes="" id=""></span>
+			</menu>
+			<menu name="Payments">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-money" id=""></i>
+				<span name="Payments" classes="" id=""></span>
+			</menu>
+			<menu name="Expenses">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-money" id=""></i>
+				<span name="Expenses" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+	<menu name="Transportation">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-bus" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Transportation" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Classes">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-sitemap" id=""></i>
+				<span name="Classes" classes="" id=""></span>
+			</menu>
+			<menu name="Sections">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-sitemap" id=""></i>
+				<span name="Sections" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+	<menu name="Subjects">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-book" id=""></i>
+		<span name="Subjects" classes="" id=""></span>
+	</menu>
+	<menu name="Reports">
+		<li name="" classes="" id=""></li>
+		<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+		<i name="" classes="fa fa-pie-chart" id=""></i>
+		<span name="Reports" classes="" id=""></span>
+	</menu>
+	<menu name="Administrative tasks">
+		<submenu>
+			<li name="" classes="treeview" id=""></li>
+			<a name="" classes="" id="" href="" data-href="" data-ref=""></a>
+			<i name="" classes="fa fa-cog" id="" place="1"></i>
+			<i name="" classes="fa fa-angle-left pull-right leftMenuExpand" place="2"></i>
+			<span name="Administrative tasks" classes="" id=""></span>
+			<ul classes="treeview-menu"></ul>
+			<menu name="Academic Years">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-calendar-check-o" id=""></i>
+				<span name="Academic Years" classes="" id=""></span>
+			</menu>
+			<menu name="Promotion">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-arrow-up" id=""></i>
+				<span name="Promotion" classes="" id=""></span>
+			</menu>
+			<menu name="Mail / SMS">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-send" id=""></i>
+				<span name="Mail / SMS" classes="" id=""></span>
+			</menu>
+			<menu name="Mail / SMS Templates">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-envelope-o" id=""></i>
+				<span name="Mail / SMS Templates" classes="" id=""></span>
+			</menu>
+			<menu name="Polls">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-tasks" id=""></i>
+				<span name="Polls" classes="" id=""></span>
+			</menu>
+			<menu name="Dormitories">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-building-o" id=""></i>
+				<span name="Dormitories" classes="" id=""></span>
+			</menu>
+			<menu name="General Settings">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-cog" id=""></i>
+				<span name="General Settings" classes="" id=""></span>
+			</menu>
+			<menu name="Languages">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-font" id=""></i>
+				<span name="Languages" classes="" id=""></span>
+			</menu>
+			<menu name="Administrators">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-gears" id=""></i>
+				<span name="Administrators" classes="" id=""></span>
+			</menu>
+			<menu name="School Terms">
+				<li name="" classes="" id=""></li>
+				<a name="" classes="aj" id="" href="#." data-href="" data-ref=""></a>
+				<i name="" classes="fa fa-file-text-o" id=""></i>
+				<span name="School Terms" classes="" id=""></span>
+			</menu>
+		</submenu>
+	</menu>
+</menues>

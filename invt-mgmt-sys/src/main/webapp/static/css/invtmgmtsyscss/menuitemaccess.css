@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+
+.box-body li, .box-body ul {
+	list-style-type: none !important;
+}
+
+div.allowedmenuitemdiv , div.menuitemdiv {
+	max-height : 70%;
+	height: 70%;
+}
+
+div.allowedmenuitemdiv li, div.allowedmenuitemdiv ul {
+	list-style-type: none !important;
+}
+
+.menuitemdiv , .allowedmenuitemdiv {
+	margin : 1%;
+	padding : 0;
+}
+
+.savemenuitems {
+	margin-bottom : 5%;
+}
+
+div.allowedmenuitemdiv , div.menuitemdiv {
+    border-radius: 3px;
+    border-top: 3px solid #d2d6de;
+    width: 100%;
+    border-top-color: #dd4b39;
+}
+
+div.allowedmenuitemdiv li.parent , div.menuitemdiv li.parent {
+    margin : 1%;
+	padding : 0;
+}
+
+span.errormessage {
+	color : red;
+}
+
+.libackgroundcolor {
+	background : #ffff99 !important;
+	background-color: #ffff99 !important;
+}

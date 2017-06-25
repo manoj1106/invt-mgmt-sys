@@ -1,0 +1,62 @@
+{
+	"AllMenues": {
+		"Dashboard": "Dashboard",
+		"Menu Item Access": "Menu Item Access",
+		"Static pages": {
+			"Control Pages": "Control Pages",
+			"School modules": "School modules"
+		},
+		"Messages": "Messages",
+		"Registrations": {
+			"Shop Registration" : "Shop Registration",
+			"User Registration" : "User Registration"
+		},
+		"Calender": "Calender",
+		"Classes Schedule": "Classes Schedule",
+		"Attendance": {
+			"Attendance": "Attendance",
+			"Attendance Statistics": "Attendance Statistics"
+		},
+		"Staff Attendance": "Staff Attendance",
+		"Hostel Management": {
+			"Hostel": "Hostel",
+			"Hostel Categories": "Hostel Categories"
+		},
+		"Library": "Library",
+		"Media Center": "Media Center",
+		"Teachers": "Teachers",
+		"Students": "Students",
+		"Parents": "Parents",
+		"Grade levels": "Grade levels",
+		"Study Material": "Study Material",
+		"Assignments": "Assignments",
+		"Exams List": "Exams List",
+		"Online Exams": "Online Exams",
+		"News Board": "News Board",
+		"Events": "Events",
+		"Accounting": {
+			"Fee Types": "Fee Types",
+			"Fee Allocation": "Fee Allocation",
+			"Payments": "Payments",
+			"Expenses": "Expenses"
+		},
+		"Transportation": {
+			"Classes": "Classes",
+			"Sections": "Sections"
+		},
+		"Subjects": "Subjects",
+		"Reports": "Reports",
+		"Administrative tasks": {
+			"Academic Years": "Academic Years",
+			"Promotion": "Promotion",
+			"Mail / SMS": "Mail / SMS",
+			"Mail / SMS Templates": "Mail / SMS Templates",
+			"Polls": "Polls",
+			"Dormitories": "Dormitories",
+			"General Settings": "General Settings",
+			"Languages": "Languages",
+			"Administrators": "Administrators",
+			"School Terms": "School Terms"
+		}
+	}
+}

@@ -1,0 +1,89 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:cache="http://www.springframework.org/schema/cache"
+	   xmlns:jee="http://www.springframework.org/schema/jee" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+  	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+    	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<import resource="classpath*:spring/dozer-spring-config.xml"/>
+
+	<mvc:annotation-driven />
+	
+	<context:component-scan base-package="com.fpcs.invt.mgmt.sys" />
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<property name="prefix" value="/jsp/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	
+	<mvc:resources mapping="/scripts/**" location="/static/scripts/" />
+	<mvc:resources mapping="/scripts/utils/**" location="/static/scripts/utils/" />
+	<mvc:resources mapping="/scripts/plugins/**" location="/static/scripts/plugins/" />
+	<mvc:resources mapping="/scripts/plugins/select/**" location="/static/scripts/plugins/select/" />
+	<mvc:resources mapping="/scripts/plugins/chartjs/**" location="/static/scripts/plugins/chartjs/" />
+	<mvc:resources mapping="/scripts/plugins/datepicker/**" location="/static/scripts/plugins/datepicker/" />
+	<mvc:resources mapping="/scripts/plugins/flot/**" location="/static/scripts/plugins/flot/" />
+	<mvc:resources mapping="/scripts/plugins/gauge/**" location="/static/scripts/plugins/gauge/" />
+	<mvc:resources mapping="/scripts/plugins/icheck/**" location="/static/scripts/plugins/icheck/" />
+	<mvc:resources mapping="/scripts/plugins/maps/**" location="/static/scripts/plugins/maps/" />
+	<mvc:resources mapping="/scripts/plugins/moment/**" location="/static/scripts/plugins/moment/" />
+	<mvc:resources mapping="/scripts/plugins/nicescroll/**" location="/static/scripts/plugins/nicescroll/" />
+	<mvc:resources mapping="/scripts/plugins/pace/**" location="/static/scripts/plugins/pace/" />
+	<mvc:resources mapping="/scripts/plugins/progressbar/**" location="/static/scripts/plugins/progressbar/" />
+	<mvc:resources mapping="/scripts/plugins/skycons/**" location="/static/scripts/plugins/skycons/" />
+	<mvc:resources mapping="/scripts/plugins/notify/**" location="/static/scripts/plugins/notify/" />
+	
+	<mvc:resources mapping="/css/**" location="/static/css/" />
+	<mvc:resources mapping="/css/plugins/**" location="/static/css/plugins/" />
+	<mvc:resources mapping="/css/plugins/select/**" location="/static/css/plugins/select/" />
+	<mvc:resources mapping="/css/invtmgmtsyscss/**" location="/static/css/invtmgmtsyscss/" />
+	<mvc:resources mapping="/css/fonts/**" location="/static/css/fonts/" />
+	<mvc:resources mapping="/images/**" location="/static/images/" />
+	<mvc:resources mapping="/fonts/**" location="/static/fonts/" />
+	<mvc:resources mapping="/fonts/css/**" location="/static/fonts/css/" />
+	<mvc:resources mapping="/fonts/fonts/**" location="/static/fonts/fonts/" />
+	
+	<!-- Configure the data source bean -->
+	<!-- <jee:jndi-lookup jndi-name="java:jboss/datasources/invt-mgmt" id="dataSource"/> -->
+	<jee:jndi-lookup jndi-name="jdbc/InvtMgmtSysDataSource" id="dataSource"/>
+	
+	<!-- Create default configuration for Hibernate -->
+  	<bean id="hibernateJpaVendorAdapter" class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+  	
+  	<!-- Configure the entity manager factory bean -->
+	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+	    <property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
+	    <!-- Set JPA properties -->
+	    <property name="jpaProperties">
+	      <props>
+	        <prop key="dialect">${db.dialect}</prop>
+	        <!-- <prop key="javax.persistence.schema-generation.database.action">none</prop>
+	        <prop key="hibernate.ejb.use_class_enhancer">false</prop> -->
+	      </props>
+	    </property>
+	    <!-- Set base package of your entities -->
+	    <property name="packagesToScan" value="com.fpcs.invt.mgmt.sys.domain"/>
+	    <!-- Set share cache mode -->
+	    <property name="sharedCacheMode" value="ENABLE_SELECTIVE"/>
+	    <!-- Set validation mode -->
+	    <property name="validationMode" value="NONE"/>
+	</bean>
+  	
+  	<!-- Configure the transaction manager bean -->
+  	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+    	<property name="entityManagerFactory" ref="entityManagerFactory"/>
+  	</bean>
+
+  	<!-- Enable annotation driven transaction management -->
+  	<tx:annotation-driven/>
+
+</beans>
