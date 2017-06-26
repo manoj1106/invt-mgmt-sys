@@ -8,16 +8,6 @@ public class SchemaDetails {
 	public static final String SHOP_DATA = "shop_data";
 	public static final String USER_DATA = "user_data";
 	
-	/*** Sequence details constants for login tables BEGIN ***/
-	public static final String DB_SEQ_USER_ID = "login_details_user_id_seq";
-	public static final String SEQ_USER_ID_NAME = "user_id_seq";
-	public static final String DB_SEQ_USER_DETAILS_USER_ID = "user_details_user_details_id_seq";
-	public static final String SEQ_USER_DETAILS_USER_ID_NAME = "user_details_id_seq";
-	/*** Sequence details constants for login tables END ***/
-	
-	public static final String DB_SEQ_PARENT_DETAILS_PARENT_ID = "parent_details_parent_details_id_seq";
-	public static final String SEQ_PARENT_DETAILS_PARENT_ID_NAME = "parent_details_id_seq";
-	
 	/*** menu item sequence ***/
 	public static final String DB_MENU_ITEM_SEQ_NAME = "menu_item_access_menu_item_access_id_seq";
 	public static final String MENU_ITEM_SEQ_NAME = "menu_item_access_id_seq";

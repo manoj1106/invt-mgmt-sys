@@ -8,12 +8,16 @@ import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fpcs.invt.mgmt.sys.constants.SchemaDetails;
 import com.fpcs.invt.mgmt.sys.domain.user_data.UserLogin;
 
 /**
@@ -77,7 +81,8 @@ public class ShopDetails implements java.io.Serializable {
 	}
 
 	@Id
-
+	@SequenceGenerator(name = SchemaDetails.SEQ_SHOP_ID_NAME , sequenceName = SchemaDetails.DB_SEQ_SHOP_ID_NAME , allocationSize = SchemaDetails.DEFLT_ALLOC_SIZE , schema = SchemaDetails.USER_DATA)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE , generator = SchemaDetails.SEQ_SHOP_ID_NAME)
 	@Column(name = "shop_id", unique = true, nullable = false)
 	public long getShopId() {
 		return this.shopId;

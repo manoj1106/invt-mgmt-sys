@@ -32,6 +32,11 @@ public class InvtMgmtUtil {
 		return !(str1.equals(str2));
 	}
 	
+	@SuppressWarnings("unchecked")
+	public static <T> String join(final T... elements) {
+		return StringUtils.join(elements);
+	}
+	
 	public static String concatenate(Object ...objects) {
 		StringBuilder concatenator = new StringBuilder();
 		for(Object object : objects) {

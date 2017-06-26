@@ -5,7 +5,7 @@
           http://dozer.sourceforge.net/schema/beanmapping.xsd">
           
   <mapping> 
-    <class-a>com.fpcs.invt.mgmt.sys.domain.UserLogin</class-a>
+    <class-a>com.fpcs.invt.mgmt.sys.domain.user_data.UserLogin</class-a>
     <class-b>com.fpcs.invt.mgmt.sys.security.UserContext.UserDetail</class-b>  
     <field>
       <a>userName</a>

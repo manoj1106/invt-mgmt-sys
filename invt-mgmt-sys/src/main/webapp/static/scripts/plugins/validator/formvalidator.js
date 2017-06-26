@@ -13,7 +13,8 @@ formfieldvalidator.wizardformvalidate = function(form) {
 };
 
 formfieldvalidator.validaterequiredfield = function(element) {
-	var requiredfields = $(element).find('input[required*="required"],select[required*="required"]');
+	//var requiredfields = $(element).find('input[required*="required"],select[required*="required"],input.required , select.required');
+	var requiredfields = $(element).find('input.required , select.required');
 	var noerror = true;
 	$(requiredfields).each(function() {
 		

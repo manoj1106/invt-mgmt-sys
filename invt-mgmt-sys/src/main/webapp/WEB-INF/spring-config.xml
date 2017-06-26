@@ -40,6 +40,7 @@
 	<mvc:resources mapping="/scripts/plugins/progressbar/**" location="/static/scripts/plugins/progressbar/" />
 	<mvc:resources mapping="/scripts/plugins/skycons/**" location="/static/scripts/plugins/skycons/" />
 	<mvc:resources mapping="/scripts/plugins/notify/**" location="/static/scripts/plugins/notify/" />
+	<mvc:resources mapping="/scripts/plugins/validator/**" location="/static/scripts/plugins/validator/" />
 	
 	<mvc:resources mapping="/css/**" location="/static/css/" />
 	<mvc:resources mapping="/css/plugins/**" location="/static/css/plugins/" />

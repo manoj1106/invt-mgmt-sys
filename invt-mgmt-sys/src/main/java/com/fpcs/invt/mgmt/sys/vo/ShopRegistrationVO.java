@@ -1,19 +1,32 @@
 package com.fpcs.invt.mgmt.sys.vo;
 
+import java.util.Date;
+
 public class ShopRegistrationVO {
 
+	private long shopId;
 	private String shopName;
-	private String shopId;
 	private String shopLicenceNo;
 	private String addressLine1;
 	private String addressLine2;
 	private String town;
-	private Integer pincode;
 	private String city;
 	private String state;
 	private String country;
 	private String shopOwner;
-	private Integer tanNumber;
+	private Long tanNumber;
+	private Long pincode;
+	private Date registrationDate;
+	private Date deletedOn;
+	private Date shopStartDate;
+
+	public long getShopId() {
+		return shopId;
+	}
+
+	public void setShopId(long shopId) {
+		this.shopId = shopId;
+	}
 
 	public String getShopName() {
 		return shopName;
@@ -21,14 +34,6 @@ public class ShopRegistrationVO {
 
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
-	}
-
-	public String getShopId() {
-		return shopId;
-	}
-
-	public void setShopId(String shopId) {
-		this.shopId = shopId;
 	}
 
 	public String getShopLicenceNo() {
@@ -63,14 +68,6 @@ public class ShopRegistrationVO {
 		this.town = town;
 	}
 
-	public Integer getPincode() {
-		return pincode;
-	}
-
-	public void setPincode(Integer pincode) {
-		this.pincode = pincode;
-	}
-
 	public String getCity() {
 		return city;
 	}
@@ -103,12 +100,44 @@ public class ShopRegistrationVO {
 		this.shopOwner = shopOwner;
 	}
 
-	public Integer getTanNumber() {
+	public Long getTanNumber() {
 		return tanNumber;
 	}
 
-	public void setTanMumber(Integer tanNumber) {
+	public void setTanNumber(Long tanNumber) {
 		this.tanNumber = tanNumber;
+	}
+
+	public Long getPincode() {
+		return pincode;
+	}
+
+	public void setPincode(Long pincode) {
+		this.pincode = pincode;
+	}
+
+	public Date getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(Date registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
+	public Date getDeletedOn() {
+		return deletedOn;
+	}
+
+	public void setDeletedOn(Date deletedOn) {
+		this.deletedOn = deletedOn;
+	}
+
+	public Date getShopStartDate() {
+		return shopStartDate;
+	}
+
+	public void setShopStartDate(Date shopStartDate) {
+		this.shopStartDate = shopStartDate;
 	}
 
 }

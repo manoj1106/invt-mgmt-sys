@@ -91,15 +91,15 @@ invtmgmtsysfunctions.ajaxServerRequestResponseWithoutJsonObj = function(url) {
 
 invtmgmtsysfunctions.setElementColor = function(element,color) {
 	$(element).css(constants.COLOR,color);
-}
+};
 
 invtmgmtsysfunctions.printMessage = function(element,message) {
 	$(element).text(message);
-}
+};
 
 invtmgmtsysfunctions.setEmptyMessage = function(element) {
 	$(element).text('');
-}
+};
 
 invtmgmtsysfunctions.printSuccessErrorMessage = function(element,responseMessage) {
 	$.each(responseMessage.message,function(key,value) {
@@ -109,7 +109,7 @@ invtmgmtsysfunctions.printSuccessErrorMessage = function(element,responseMessage
 			invtmgmtsysfunctions.printNotificationMessage(notificationMsg.Error,value,notificationMsg.error);
 		}
 	});
-}
+};
 
 invtmgmtsysfunctions.printNotificationMessage = function(title,message,type) {
 	new PNotify({
@@ -117,10 +117,10 @@ invtmgmtsysfunctions.printNotificationMessage = function(title,message,type) {
         text : message,
         type : type
     });
-}
+};
 
 invtmgmtsysfunctions.validate = function(element) {
-	if(formvalidator.validateform(element)) {
+	if(formfieldvalidator.validateform(element)) {
 		return true;
 	}
 	return false;
@@ -219,6 +219,26 @@ invtmgmtsysfunctions.logout = function() {
 	$('#logoutform').submit();
 } 
 
+/*$.fn.serializeObject = function() {
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name]) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};*/
+
+invtmgmtsysfunctions.getJsonForForm = function(form) {
+	var json = $(form).serializeObject();
+	return json;
+};
 
 
 

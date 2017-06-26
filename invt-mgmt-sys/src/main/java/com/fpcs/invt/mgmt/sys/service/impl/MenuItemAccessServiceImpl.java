@@ -81,7 +81,7 @@ public class MenuItemAccessServiceImpl implements MenuItemAccessService {
 			messages.put(CommonConstants.ERROR, 
 					ErrorMessagesReader.getErrorMessage(ERROR_CODE.SERVICE_EXCEPTION.getErrorCode()));
 		}
-		responseMessage.setMessages(messages);
+		responseMessage.setMessage(messages);
 		return responseMessage;
 	}
 

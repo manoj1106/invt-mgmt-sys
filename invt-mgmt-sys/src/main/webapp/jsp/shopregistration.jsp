@@ -31,228 +31,252 @@
 						</div>
 					</div>
 					<div class="box-body">
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="shopName">
-										<fmt:message key="shopname" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
+						<form id="shopDataForm">
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="shopName">
+											<fmt:message key="shopname" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="shopOwner">
+											<fmt:message key="shopowner" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="tanNumber">
+											<fmt:message key="tannumber" bundle="${label}" />
+										</label>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="shopOwner">
-										<fmt:message key="shopowner" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
+							
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="shopName" class="form-control col-md-7 col-xs-12 required" name="shopName" 
+												placeholder="<fmt:message key="shopname" bundle="${label}" />" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="shopOwner" class="form-control col-md-7 col-xs-12 required" name="shopOwner" 
+												placeholder="<fmt:message key="shopowner" bundle="${label}" />" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="tanNumber" class="form-control col-md-7 col-xs-12" name="tanNumber" 
+												placeholder="<fmt:message key="tannumber" bundle="${label}" />" type="text">
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="tanNumber">
-										<fmt:message key="tannumber" bundle="${label}" />
-									</label>
+							
+							<div class="row padding-top-1per">
+								<div class="col-md-12 col-sm-6 col-xs-12">
 								</div>
 							</div>
-						</div>
 						
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="shopName" class="form-control col-md-7 col-xs-12" name="shopName" 
-											placeholder="<fmt:message key="shopname" bundle="${label}" />" type="text">
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="shopLicenceNo">
+											<fmt:message key="shoplicenceno" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="shopOwner" class="form-control col-md-7 col-xs-12" name="shopOwner" 
-											placeholder="<fmt:message key="shopowner" bundle="${label}" />" type="text">
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="shopLicenceNo" class="form-control col-md-7 col-xs-12 required" name="shopLicenceNo" 
+												placeholder="<fmt:message key="shoplicenceno" bundle="${label}" />" type="text">
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="tanNumber" class="form-control col-md-7 col-xs-12" name="tanNumber" 
-											placeholder="<fmt:message key="tannumber" bundle="${label}" />" type="text">
+							
+							<div class="row padding-top-1per">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="addressLine1">
+											<fmt:message key="addressline1" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="addressLine2">
+											<fmt:message key="addressline2" bundle="${label}" />
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="town">
+											<fmt:message key="town" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="row padding-top-1per">
-							<div class="col-md-12 col-sm-6 col-xs-12">
-							</div>
-						</div>
-					
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="shopLicenceNo">
-										<fmt:message key="shoplicenceno" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="addressLine1" class="form-control col-md-7 col-xs-12 required" name="addressLine1" 
+												placeholder="<fmt:message key="addressline1" bundle="${label}" />" type="text">
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="shopLicenceNo" class="form-control col-md-7 col-xs-12" name="shopLicenceNo" 
-											placeholder="<fmt:message key="shoplicenceno" bundle="${label}" />" type="text">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="addressLine2" class="form-control col-md-7 col-xs-12" name="addressLine2" 
+												placeholder="<fmt:message key="addressline2" bundle="${label}" />" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="town" class="form-control col-md-7 col-xs-12 required" name="town" 
+												placeholder="<fmt:message key="town" bundle="${label}" />" type="text">
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="row padding-top-1per">
-							<div class="col-md-12 col-sm-6 col-xs-12">
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="addressLine1">
-										<fmt:message key="addressline1" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
+							
+							<div class="row padding-top-1per">
+								<div class="col-md-12 col-sm-6 col-xs-12">
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="addressLine2">
-										<fmt:message key="addressline2" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="town">
-										<fmt:message key="town" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="addressLine1" class="form-control col-md-7 col-xs-12" name="addressLine1" 
-											placeholder="<fmt:message key="addressline1" bundle="${label}" />" type="text">
+							
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="pincode">
+											<fmt:message key="pincode" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="addressLine2" class="form-control col-md-7 col-xs-12" name="addressLine2" 
-											placeholder="<fmt:message key="addressline2" bundle="${label}" />" type="text">
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input id="pincode" class="form-control col-md-7 col-xs-12 required" name="pincode" 
+												placeholder="<fmt:message key="pincode" bundle="${label}" />" type="text">
+										</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="town" class="form-control col-md-7 col-xs-12" name="town" 
-											placeholder="<fmt:message key="town" bundle="${label}" />" type="text">
+							
+							<div class="row padding-top-1per">
+								<div class="col-md-12 col-sm-6 col-xs-12">
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="country">
+											<fmt:message key="country" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="state">
+											<fmt:message key="state" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<label class="control-label col-md-6 col-sm-3 col-xs-12" for="city">
+											<fmt:message key="city" bundle="${label}" /><span class="required mandat">&nbsp;*</span>
+										</label>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="row padding-top-1per">
-							<div class="col-md-12 col-sm-6 col-xs-12">
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="pincode">
-										<fmt:message key="pincode" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
+							<div class="row">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">									
+											<select class="form-control col-md-7 col-xs-12 required" name="country" id="country">
+												<option value="select"><fmt:message key="select" bundle="${label}" /></option>
+												<c:forEach var="country" items="${countries}">
+													<option value="${country}">${country}</option>
+												</c:forEach>
+											</select>
+										</div>
+									</div>
 								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<input id="pincode" class="form-control col-md-7 col-xs-12" name="pincode" 
-											placeholder="<fmt:message key="pincode" bundle="${label}" />" type="text">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<select class="form-control col-md-7 col-xs-12 required" name="state" id="state" disabled>
+												<option value="select"><fmt:message key="select" bundle="${label}" /></option>											
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<select class="form-control col-md-7 col-xs-12 required" name="city" id="city" disabled>
+												<option value="select"><fmt:message key="select" bundle="${label}" /></option>											
+											</select>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						
-						<div class="row padding-top-1per">
-							<div class="col-md-12 col-sm-6 col-xs-12">
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="country">
-										<fmt:message key="country" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
+							
+							<div class="row padding-top-1per">
+								<div class="col-md-12 col-sm-6 col-xs-12">
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="state">
-										<fmt:message key="state" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<label class="control-label col-md-6 col-sm-3 col-xs-12" for="city">
-										<fmt:message key="city" bundle="${label}" /><span class="required mandat">*</span>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">									
-										<select class="form-control col-md-7 col-xs-12" name="country" id="country">
-											<option value="select"><fmt:message key="select" bundle="${label}" /></option>
-											<c:forEach var="country" items="${countries}">
-												<option value="${country}">${country}</option>
-											</c:forEach>
-										</select>
+							
+							<div class="row padding-top-1per">
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+											<input value="Save" type="button" id="saveShopData" class="btn btn-block btn-primary"/>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<select class="form-control col-md-7 col-xs-12 disabled" name="state" id="state" disabled>
-											<option value="select"><fmt:message key="select" bundle="${label}" /></option>											
-										</select>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-12">
-								<div class="item form-group">
-									<div class="col-md-12 col-sm-6 col-xs-12">
-										<select class="form-control col-md-7 col-xs-12 disabled" name="city" id="city" disabled>
-											<option value="select"><fmt:message key="select" bundle="${label}" /></option>											
-										</select>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<div class="row padding-top-1per">
-							<div class="col-md-12 col-sm-6 col-xs-12">
-							</div>
-						</div>
+								<div class="col-md-4 col-sm-6 col-xs-12">
+									<div class="item form-group">
+										<div class="col-md-12 col-sm-6 col-xs-12">
 											
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>					
 					</div>
 				</div>
 			</div>

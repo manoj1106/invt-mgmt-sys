@@ -15,8 +15,8 @@ public class ResponseMessage {
 		return message;
 	}
 
-	public void setMessages(Map<String, Object> messages) {
-		this.message = messages;
+	public void setMessage(Map<String, Object> message) {
+		this.message = message;
 	}
 
 	public Map<String, Object> getDataMap() {

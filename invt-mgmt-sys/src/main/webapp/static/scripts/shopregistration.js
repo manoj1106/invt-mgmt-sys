@@ -3,7 +3,7 @@ var shopregistration = {};
 $(function(e) {
 	
 	$('#country').off().on('change' , function(e){
-		debugger;
+		
 		invtmgmtsysutil.showLoader();
 		shopregistration.getStatesOnCountryChange(e);
 	});
@@ -13,12 +13,15 @@ $(function(e) {
 		shopregistration.getCitiesOnStatesChange(e);
 	});
 	
+	$('#saveShopData').off().on('click' , function(e){
+		shopregistration.saveShopData();
+	});
+	
 	invtmgmtsysutil.hideLoader();
 });
 
 
 shopregistration.getStatesOnCountryChange = function(e) {
-	debugger;
 	var country = $('#country').val();
 	$('#state').empty();
 	$('#city').empty();
@@ -52,7 +55,6 @@ shopregistration.getStatesOnCountryChange = function(e) {
 }
 
 shopregistration.getCitiesOnStatesChange = function(e) {
-	debugger;
 	var state = $('#state').val();
 	$('#city').empty();
 	var select = '<option value="select">' + constants.SELECT_HIFEN + '</option>';
@@ -80,4 +82,15 @@ shopregistration.getCitiesOnStatesChange = function(e) {
 	}
 	$('#city').append(select);
 	invtmgmtsysutil.hideLoader();
+}
+
+shopregistration.saveShopData = function() {
+	var form = $('#shopDataForm');
+	if(invtmgmtsysfunctions.validate(form)) {
+		var json = invtmgmtsysfunctions.getJsonForForm(form);
+		var responseMessage = invtmgmtsysfunctions.ajaxServerRequestResponse(URL.SAVE_SHOP_DETAILS , null , json);
+		invtmgmtsysfunctions.printSuccessErrorMessage(null , responseMessage);
+	} else {
+		console.log("form validation failed....");
+	}
 }
