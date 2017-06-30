@@ -19,6 +19,7 @@ import com.fpcs.invt.mgmt.sys.utils.ObjectFactory;
 import com.fpcs.invt.mgmt.sys.utils.ResponseMessage;
 import com.fpcs.invt.mgmt.sys.utils.exception.ErrorHandler;
 import com.fpcs.invt.mgmt.sys.vo.ShopRegistrationVO;
+import com.fpcs.invt.mgmt.sys.vo.UserRegistrationVO;
 
 @Controller
 @RequestMapping(value=ControllerConstants.REGISTRATION_BASE_URL)
@@ -50,6 +51,14 @@ public class RegistrationController {
 		ErrorHandler errorHandler = objectFactory.getErrorHandler();
 		Map<String,Object> contextMap = objectFactory.getMap();
 		return registrationService.saveShopDetails(shopRegistrationVO, errorHandler, contextMap);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = ControllerConstants.SAVE_USER_DETAILS , method = RequestMethod.POST)
+	public ResponseMessage saveUserDetails(@RequestBody UserRegistrationVO userRegistrationVO) {
+		ErrorHandler errorHandler = objectFactory.getErrorHandler();
+		Map<String,Object> contextMap = objectFactory.getMap();
+		return registrationService.saveUserDetails(userRegistrationVO, errorHandler, contextMap);
 	}
 	
 }

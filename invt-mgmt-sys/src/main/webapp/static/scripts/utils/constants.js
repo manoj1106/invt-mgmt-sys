@@ -19,6 +19,7 @@ var URL = {
 	GET_CITIES_BY_STATES : 'invtmgmtsys/getCitiesByStates',
 	/***url mapping for shop registration***/
 	SAVE_SHOP_DETAILS : "registration/saveShopDetails",
+	SAVE_USER_DETAILS : "registration/saveUserDetails",
 	/*** url mapping for menu item access ***/
 	MENU_ITEM_ACCESS : 'menuitemaccess/menuitemaccess',
 	SAVE_MENU_ITEM_ACCESS : 'menuitemaccess/saveMenuItemAccess',

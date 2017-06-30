@@ -1,30 +1,28 @@
 package com.fpcs.invt.mgmt.sys.vo;
 
-import java.util.Date;
-
 public class ShopRegistrationVO {
 
-	private long shopId;
+	private Long shopId;
 	private String shopName;
 	private String shopLicenceNo;
 	private String addressLine1;
 	private String addressLine2;
 	private String town;
+	private Long pincode;
 	private String city;
 	private String state;
 	private String country;
 	private String shopOwner;
 	private Long tanNumber;
-	private Long pincode;
-	private Date registrationDate;
-	private Date deletedOn;
-	private Date shopStartDate;
+	private String registrationDate;
+	private String deletedOn;
+	private String shopStartDate;
 
-	public long getShopId() {
+	public Long getShopId() {
 		return shopId;
 	}
 
-	public void setShopId(long shopId) {
+	public void setShopId(Long shopId) {
 		this.shopId = shopId;
 	}
 
@@ -116,27 +114,27 @@ public class ShopRegistrationVO {
 		this.pincode = pincode;
 	}
 
-	public Date getRegistrationDate() {
+	public String getRegistrationDate() {
 		return registrationDate;
 	}
 
-	public void setRegistrationDate(Date registrationDate) {
+	public void setRegistrationDate(String registrationDate) {
 		this.registrationDate = registrationDate;
 	}
 
-	public Date getDeletedOn() {
+	public String getDeletedOn() {
 		return deletedOn;
 	}
 
-	public void setDeletedOn(Date deletedOn) {
+	public void setDeletedOn(String deletedOn) {
 		this.deletedOn = deletedOn;
 	}
 
-	public Date getShopStartDate() {
+	public String getShopStartDate() {
 		return shopStartDate;
 	}
 
-	public void setShopStartDate(Date shopStartDate) {
+	public void setShopStartDate(String shopStartDate) {
 		this.shopStartDate = shopStartDate;
 	}
 

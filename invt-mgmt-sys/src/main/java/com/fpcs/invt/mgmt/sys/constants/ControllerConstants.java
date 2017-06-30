@@ -41,6 +41,7 @@ public class ControllerConstants {
 	public static final String SHOP_REGISTRATION = "/shopregistration";
 	public static final String USER_REGISTRATION = "/userregistration";
 	public static final String SAVE_SHOP_DETAILS = "/saveShopDetails";
+	public static final String SAVE_USER_DETAILS = "/saveUserDetails";
 	
 	private ControllerConstants() {
 		

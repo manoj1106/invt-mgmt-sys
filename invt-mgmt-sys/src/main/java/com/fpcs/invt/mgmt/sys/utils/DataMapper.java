@@ -8,6 +8,7 @@ import com.fpcs.invt.mgmt.sys.domain.shop_data.ShopDetails;
 import com.fpcs.invt.mgmt.sys.domain.user_data.UserLogin;
 import com.fpcs.invt.mgmt.sys.security.UserContext;
 import com.fpcs.invt.mgmt.sys.vo.ShopRegistrationVO;
+import com.fpcs.invt.mgmt.sys.vo.UserRegistrationVO;
 
 @Component
 public class DataMapper {
@@ -21,6 +22,10 @@ public class DataMapper {
 	
 	public ShopDetails mapShopDetail(ShopRegistrationVO shopRegistrationVO) {
 		return (ShopDetails)mapper.map(shopRegistrationVO, ShopDetails.class);
+	}
+
+	public UserLogin mapUserLoginDetail(UserRegistrationVO userRegistrationVO) {
+		return (UserLogin)mapper.map(userRegistrationVO, UserLogin.class);
 	}
 	
 }

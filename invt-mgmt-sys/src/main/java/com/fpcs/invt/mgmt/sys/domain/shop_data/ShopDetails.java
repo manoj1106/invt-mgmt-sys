@@ -81,7 +81,7 @@ public class ShopDetails implements java.io.Serializable {
 	}
 
 	@Id
-	@SequenceGenerator(name = SchemaDetails.SEQ_SHOP_ID_NAME , sequenceName = SchemaDetails.DB_SEQ_SHOP_ID_NAME , allocationSize = SchemaDetails.DEFLT_ALLOC_SIZE , schema = SchemaDetails.USER_DATA)
+	@SequenceGenerator(name = SchemaDetails.SEQ_SHOP_ID_NAME , sequenceName = SchemaDetails.DB_SEQ_SHOP_ID_NAME , allocationSize = SchemaDetails.DEFLT_ALLOC_SIZE , schema = SchemaDetails.SHOP_DATA)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE , generator = SchemaDetails.SEQ_SHOP_ID_NAME)
 	@Column(name = "shop_id", unique = true, nullable = false)
 	public long getShopId() {

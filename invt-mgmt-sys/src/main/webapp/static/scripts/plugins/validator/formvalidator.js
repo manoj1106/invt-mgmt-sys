@@ -15,6 +15,7 @@ formfieldvalidator.wizardformvalidate = function(form) {
 formfieldvalidator.validaterequiredfield = function(element) {
 	//var requiredfields = $(element).find('input[required*="required"],select[required*="required"],input.required , select.required');
 	var requiredfields = $(element).find('input.required , select.required');
+	var requiredfieldsParent = $(requiredfields).parents('div.item.form-group');
 	var noerror = true;
 	$(requiredfields).each(function() {
 		
@@ -29,7 +30,10 @@ formfieldvalidator.validaterequiredfield = function(element) {
 			noerror = false;
 		}
 		
+		$(requiredfieldsParent).removeClass('has-error');
+		
 		if(!noerror) {
+			$(requiredfieldsParent).addClass('has-error');
 			formfieldvalidator.notifyerror();
 			return noerror;
 		}

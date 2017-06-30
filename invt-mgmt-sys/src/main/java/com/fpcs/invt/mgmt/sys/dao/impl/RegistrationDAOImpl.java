@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import com.fpcs.invt.mgmt.sys.dao.RegistrationDAO;
 import com.fpcs.invt.mgmt.sys.domain.shop_data.ShopDetails;
+import com.fpcs.invt.mgmt.sys.domain.user_data.UserLogin;
 import com.fpcs.invt.mgmt.sys.enums.ERROR_CODE;
 import com.fpcs.invt.mgmt.sys.utils.exception.InvtMgmtSysException;
 
@@ -32,6 +33,18 @@ public class RegistrationDAOImpl implements RegistrationDAO {
 			throw new InvtMgmtSysException(ERROR_CODE.HIBERNATE_EXCEPTION.getErrorCode(), e);
 		}
 		return shopDetails.getShopId();
+	}
+
+	@Override
+	public boolean saveUserDetails(UserLogin userLogin) {
+		Session session = entityManager.unwrap(Session.class);
+		try {
+			session.save(userLogin);
+			return true;
+		} catch(HibernateException e) {
+			logger.error("exception occurred while saving user login details" , e);
+			throw new InvtMgmtSysException(ERROR_CODE.HIBERNATE_EXCEPTION.getErrorCode(), e);
+		}
 	}
 	
 }

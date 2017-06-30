@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queries xsi:schemaLocation="queries.xsd">
+	<query>
+		<name>school_list</name>
+		<value>
+		<![CDATA[
+			select * from shop_data.shop_details where deleted_on is null and
+			case 
+				when ${userrole}='SYSTEM_ADMINN' then
+					1=1
+				else
+					shop_id = ${shopId}
+			end
+		]]>
+		</value>
+	</query>
+	<query>
+		<name>user_list</name>
+		<value>
+		<![CDATA[
+			select user_name,shop_id,(first_name || coalesce(' ' || middle_name, '') || ' ' || last_name) as full_name,
+			(address_line_1 || coalesce(' ' || address_line_2, '') || ' ' || town) as address , pincode, city , state,
+			country , is_active	from user_data.user_login where deleted_on is null 
+			and role_id in (select role_id from user_data.roles where role <> ${userrole})  
+		]]>
+		</value>
+	</query>
+</queries>

@@ -14,19 +14,19 @@
 	<title><fmt:message	key="shopregistration" bundle="${label}" /></title>
 </head>
 <body>
-	<section class="content-header ng-scope">
-		<h1 class="ng-binding">
-			<i class="fa fa-dashboard"></i>&nbsp;<span><fmt:message	key="shopregistration" bundle="${label}" /></span>
+	<section class="content-header">
+		<h1>
+			<i class="fa fa-university"></i>&nbsp;<span><fmt:message	key="shopregistration" bundle="${label}" /></span>
 		</h1>
 	</section>
-	<section class="content-header ng-scope min-height">
+	<section class="content-header min-height">
 		<div class="row">
 			<div class="col-lg-12 connectedSortable">
 				<div class="box box-primary">
 					<div class="box-header">
 						<div class="row">
 							<div class="col-md-12 col-sm-6 col-xs-12">
-								<span>All fields mark with&nbsp;(<span class="mandat">*</span>) are mantatory.</span>
+								<span>All fields mark with&nbsp;(<span class="mandat">&nbsp;*&nbsp;</span>) are mantatory.</span>
 							</div>
 						</div>
 					</div>

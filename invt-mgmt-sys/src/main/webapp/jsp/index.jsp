@@ -22,29 +22,27 @@
     <link href="css/invtmgmtsyscss/common.css" rel="stylesheet" type="text/css">
   	<style>.cke{visibility:hidden;}</style>
  </head>
-<body class="skin-blue sidebar-mini ng-scope">
+<body class="skin-blue sidebar-mini">
 	<div class="wrapper">
       	<%@ include file="header.jsp" %>
 		<%@ include file="sidebar.jsp" %>      
       	<!-- ngView:  -->
-      	<div id="parentDBArea" class="content-wrapper ng-scope" style="min-height: 1209px;">
+      	<div id="parentDBArea" class="content-wrapper" style="min-height: 1209px;">
       		<%@ include file="dashboardcontent.jsp" %>
 		</div>
-		<div id="myModal" class="modal fade ng-scope in" visible="chgAcYearModalShow" aria-hidden="false" style="display: none; padding-right: 17px;">
+		<div id="myModal" class="modal fade in" visible="chgAcYearModalShow" aria-hidden="false" style="display: none; padding-right: 17px;">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span>x</span></button>
-						<h4 class="modal-title ng-binding">Change Year</h4>
+						<h4 class="modal-title">Change Year</h4>
 					</div>
-					<div class="modal-body" ng-transclude="">
-				        <div class="ng-scope">
-				            <select class="form-control ng-pristine ng-valid" id="selectedAcYear" ng-model="dashboardData.selectedAcYear">
-				              <!-- ngRepeat: year in $root.dashboardData.academicYear --><!-- ngIf: year.isDefault == '0' --><option ng-selected="year.id == '6'" ng-repeat="year in $root.dashboardData.academicYear" value="3" ng-if="year.isDefault == '0'" class="ng-binding ng-scope">2013 - 2014</option><!-- end ngIf: year.isDefault == '0' --><!-- end ngRepeat: year in $root.dashboardData.academicYear --><!-- ngIf: year.isDefault == '0' --><!-- end ngRepeat: year in $root.dashboardData.academicYear --><!-- ngIf: year.isDefault == '0' --><option ng-selected="year.id == '6'" ng-repeat="year in $root.dashboardData.academicYear" value="10" ng-if="year.isDefault == '0'" class="ng-binding ng-scope">2014 - 2015</option><!-- end ngIf: year.isDefault == '0' --><!-- end ngRepeat: year in $root.dashboardData.academicYear -->
-				              <!-- ngRepeat: year in $root.dashboardData.academicYear --><!-- ngIf: year.isDefault == '1' --><!-- end ngRepeat: year in $root.dashboardData.academicYear --><!-- ngIf: year.isDefault == '1' --><option ng-selected="year.id == '6'" ng-repeat="year in $root.dashboardData.academicYear" value="6" ng-if="year.isDefault == '1'" class="ng-binding ng-scope" selected="selected">2015-2016 - Default Year</option><!-- end ngIf: year.isDefault == '1' --><!-- end ngRepeat: year in $root.dashboardData.academicYear --><!-- ngIf: year.isDefault == '1' --><!-- end ngRepeat: year in $root.dashboardData.academicYear -->
+					<div class="modal-body">
+				        <div>
+				            <select class="form-control" id="selectedAcYear">
 				            </select>
 				            <br>
-				            <a class="floatRTL btn btn-success btn-flat pull-right marginBottom15 ng-binding" ng-click="chgAcYear()">Change Year</a>
+				            <a class="floatRTL btn btn-success btn-flat pull-right marginBottom15">Change Year</a>
 				            <div class="clearfix"></div>
 				        </div>
 				    </div>
